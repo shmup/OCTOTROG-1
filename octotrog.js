@@ -17,34 +17,30 @@ OCTOTROG
 .load('main')
 .load('database')
 .load('irc', {
-  nick: 'OCTOTROG',
-  nick_alt: 'OCTOTROG_',
-  userName: 'OCTOTROG',
-  realName: 'KILL THEM ALL!',
+  nick: 'OCTOXOM',
+  nick_alt: 'OCTOXOM_',
+  userName: 'OCTOXOM',
+  realName: 'doot doot doot',
   port: 6667,
-  channels: ['#octolog'],
-  server: 'castleheck.tx.us.lunarnet.org'
+  channels: ['#crap'],
+  server: 'moo.slashnet.org'
 })
 .load('dictionary')
 .load('crawl.data')
 .load('crawl.challenges')
 .load('crawl.watchlist')
 .load('crawl', {
-  relay_nick: 'OCTOTROG',
+  relay_nick: 'OCTOXOM',
   relay_server: 'irc.freenode.net',
   relay_from: ['##crawl', '#octolog'],
-  relay_to: ['#octolog'],
+  relay_to: ['#crap'],
   irc: {
-    userName: 'octotrog',
-    realName: 'KILL THEM ALL!',
+    userName: 'OCTOXOM',
+    realName: 'doot doot doot',
     showErrors: true,
     stripColors: false,
     floodProtection: true
   }
 })
 .load('crawl.www')
-.load('crawl.twitter', {
-  auth_tokens: secrets.twitter
-})
 .start();
-
