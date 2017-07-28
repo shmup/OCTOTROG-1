@@ -13,7 +13,12 @@ module.exports = {
 
   listeners: {
     'discord:say': function(evt, message) {
-      this.hook.send(message);
+      this.hook.send(this.stripColor(message));
     }
+  },
+
+  stripColor: function(item) {
+    var re = /^{.*}/;
+    return item.replace(re, "");
   }
 };

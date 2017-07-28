@@ -37,7 +37,7 @@ OCTOTROG
     userName: 'OCTOXOM',
     realName: 'doot doot doot',
     showErrors: true,
-    stripColors: false,
+    stripColors: true,
     floodProtection: true
   }
 })
