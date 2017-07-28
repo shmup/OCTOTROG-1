@@ -288,6 +288,7 @@ module.exports = {
     }
     _.forEach(this.config.relay_to, function(channel) {
       this.dispatch('irc:cmd:saycolor', channel, echo);
+      this.dispatch('discord:say', text);
     }, this);
   },
 

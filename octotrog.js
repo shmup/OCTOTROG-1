@@ -27,7 +27,6 @@ OCTOTROG
 })
 .load('dictionary')
 .load('crawl.data')
-.load('crawl.challenges')
 .load('crawl.watchlist')
 .load('crawl', {
   relay_nick: 'OCTOXOM',
@@ -43,4 +42,8 @@ OCTOTROG
   }
 })
 .load('crawl.www')
+.load('crawl.discord', {
+  id: secrets.discord.id,
+  token: secrets.discord.token
+})
 .start();
